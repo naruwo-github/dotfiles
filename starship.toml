@@ -1,0 +1,11 @@
+add_newline = false
+
+[character]
+success_symbol = "🚀 "
+
+[directory]
+truncation_length = 100
+truncate_to_repo = false
+
+[git_branch]
+symbol = "🌱 "
