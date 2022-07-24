@@ -1,10 +1,6 @@
 eval "$(starship init zsh)"
 
-
-##
 # シェル関数`compinit`の自動読み込み
-##
-
 autoload -Uz compinit && compinit
 
 
@@ -24,9 +20,10 @@ setopt hist_ignore_dups
 setopt EXTENDED_HISTORY
 
 
-##
-# read all prezto settings
-# about prezto: https://github.com/sorin-ionescu/prezto
-##
-
+# prezto settings
+  # about prezto: https://github.com/sorin-ionescu/prezto
 # source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+
+
+# fzf settings
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
