@@ -27,3 +27,6 @@ setopt EXTENDED_HISTORY
 
 # fzf settings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# asdf settings
+. /opt/homebrew/opt/asdf/asdf.sh
