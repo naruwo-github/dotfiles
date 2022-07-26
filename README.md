@@ -8,6 +8,7 @@
   * symbolic link example
     * `ln -s ./zsh-setting/.zprofile ~/.zprofile`
     * `ln -s ./zsh-setting/.zshrc ~/.zshrc`
+    * `ln -s ./zsh-setting/.alias_profile ~/.alias_profile`
 
 * `starship.toml`: This is one of zsh settings.
   * Starship official: https://starship.rs/

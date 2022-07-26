@@ -1,0 +1,32 @@
+alias ls='exa'
+alias ll='exa -l'
+alias lla='exa -la'
+
+# ls after cd
+cdls () {
+  \cd "$@" && ls
+}
+alias cd="cdls"
+
+# move often
+alias cdssh='cd ~/.ssh'
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+
+# git
+alias g='git'
+alias ga='git add'
+alias gd='git diff'
+alias gs='git status'
+alias gsta='git stash'
+alias gp='git push'
+alias gb='git branch'
+alias gco='git checkout'
+alias gf='git fetch'
+alias gc='git commit'
+
+# safety net
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'

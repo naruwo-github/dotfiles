@@ -32,6 +32,4 @@ setopt EXTENDED_HISTORY
 . /opt/homebrew/opt/asdf/asdf.sh
 
 # alias setting
-alias ls='exa'
-alias ll='exa -l'
-alias lla='exa -la'
+source ~/.alias_profile
