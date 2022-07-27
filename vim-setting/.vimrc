@@ -23,3 +23,5 @@ set ruler
 set showmatch
 set cursorline
 set encoding=UTF-8
+
+let NERDTreeShowHidden=1

@@ -10,6 +10,7 @@ alias cd="cdls"
 
 # move often
 alias cdssh='cd ~/.ssh'
+alias cdd='cd ~/Developer'
 alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
