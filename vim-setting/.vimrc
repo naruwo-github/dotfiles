@@ -25,3 +25,4 @@ set cursorline
 set encoding=UTF-8
 
 let NERDTreeShowHidden=1
+autocmd VimEnter * NERDTree | wincmd p
