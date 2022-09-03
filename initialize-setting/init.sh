@@ -14,3 +14,8 @@ asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 NODE_VERSION=18.6.0
 asdf install nodejs $NODE_VERSION
 asdf global nodejs $NODE_VERSION
+
+asdf plugin add python
+PYTHON_VERSION=3.10.6
+asdf install python $PYTHON_VERSION
+asdf global python $PYTHON_VERSION
