@@ -19,3 +19,5 @@ asdf plugin add python
 PYTHON_VERSION=3.10.6
 asdf install python $PYTHON_VERSION
 asdf global python $PYTHON_VERSION
+pip install --upgrade pip
+pip install pipenv
