@@ -1,6 +1,9 @@
+# exa plugin
 alias ls='exa'
 alias ll='exa -l'
 alias lla='exa -la'
+
+alias c='clear'
 
 # ls after cd
 cdls () {
