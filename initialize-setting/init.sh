@@ -8,7 +8,7 @@ brew install exa
 brew install starship
 
 # Third, install language via asdf
-. /usr/local/opt/asdf/libexec/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 NODE_VERSION=18.6.0
