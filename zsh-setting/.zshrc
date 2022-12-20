@@ -28,7 +28,9 @@ setopt EXTENDED_HISTORY
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # asdf settings
-. /opt/homebrew/opt/asdf/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # alias setting
 source ~/.alias_profile
+-e 
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
