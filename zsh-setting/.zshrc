@@ -19,14 +19,6 @@ setopt hist_ignore_dups
 # 開始と終了を記録
 setopt EXTENDED_HISTORY
 
-
-# prezto settings
-  # about prezto: https://github.com/sorin-ionescu/prezto
-# source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-
-# fzf settings
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # alias setting
 source ~/.alias_profile
 

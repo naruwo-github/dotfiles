@@ -5,7 +5,7 @@ These are helpfull when you change your mac.
 * `. init.sh`
 * Installing packages
   * Homebrew: https://brew.sh/
-    * fzf: https://github.com/junegunn/fzf
     * asdf: https://asdf-vm.com/
     * exa: https://the.exa.website/
     * starship: https://starship.rs/
+    - peco: https://github.com/peco/peco
