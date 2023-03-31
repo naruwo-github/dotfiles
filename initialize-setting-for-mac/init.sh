@@ -10,7 +10,7 @@ brew install starship
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
-NODE_VERSION=18.6.0
+NODE_VERSION=19.8.0
 asdf install nodejs $NODE_VERSION
 asdf global nodejs $NODE_VERSION
 
