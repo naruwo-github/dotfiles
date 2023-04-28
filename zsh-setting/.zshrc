@@ -45,3 +45,9 @@ function peco-cdr () {
 }
 zle -N peco-cdr
 bindkey '^E' peco-cdr
+
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
