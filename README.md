@@ -15,6 +15,11 @@
     * `ln -s ~/.../zsh-setting/.zprofile ~/.zprofile`
     * `ln -s ~/.../zsh-setting/.zshrc ~/.zshrc`
     * `ln -s ~/.../zsh-setting/.alias_profile ~/.alias_profile`
+  * Install plugins
+```zsh
+`git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
+```
 
 * `starship.toml`: This is one of zsh settings.
   * Starship official: https://starship.rs/
