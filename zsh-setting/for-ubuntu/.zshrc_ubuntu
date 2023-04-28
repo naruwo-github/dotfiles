@@ -103,3 +103,6 @@ source $ZSH/oh-my-zsh.sh
 
 # If you have .profile
 source ~/.profile
+
+# aliases
+source ./alias_profile
