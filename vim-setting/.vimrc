@@ -34,6 +34,7 @@ Plug 'dense-analysis/ale'     " https://github.com/dense-analysis/ale
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'       " https://github.com/junegunn/fzf.vim
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " https://github.com/neoclide/coc.nvim
+Plug 'morhetz/gruvbox'        " https://vimawesome.com/plugin/gruvbox
 call plug#end()
 
 " setting for nerdtree

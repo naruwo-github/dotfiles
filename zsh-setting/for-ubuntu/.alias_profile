@@ -1,5 +1,5 @@
 alias ll='ls -l'
-alias lla='ls -la'
+alias la='ls -la'
 
 alias c='clear'
 
@@ -35,3 +35,6 @@ alias gc='git commit'
 # docker
 alias d='docker'
 alias dc='docker compose'
+alias dcon='docker container'
+alias dsp='docker system prune'
+alias dvp='docker volume prune'

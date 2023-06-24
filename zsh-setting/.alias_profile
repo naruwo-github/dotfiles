@@ -1,7 +1,7 @@
 # exa plugin
 alias ls='exa'
 alias ll='exa -l'
-alias lla='exa -la'
+alias la='exa -la'
 
 alias c='clear'
 
@@ -37,4 +37,10 @@ alias gc='git commit'
 
 # docker
 alias d='docker'
-alias dc='docker-compose'
+alias dc='docker compose'
+alias dsp='docker system prune'
+alias dvp='docker volume prune'
+
+# lazyxxx
+alias lzg='lazygit'
+alias lzd='lazydocker'

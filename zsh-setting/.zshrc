@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 eval "$(starship init zsh)"
 
 # シェル関数`compinit`の自動読み込み
@@ -22,6 +24,8 @@ setopt EXTENDED_HISTORY
 # alias setting
 source ~/.alias_profile
 
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # asdf settings
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
@@ -45,3 +49,6 @@ function peco-cdr () {
 }
 zle -N peco-cdr
 bindkey '^E' peco-cdr
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
