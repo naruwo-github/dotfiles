@@ -1,7 +1,7 @@
-# exa plugin
-alias ls='exa'
-alias ll='exa -l'
-alias la='exa -la'
+# eza plugin
+alias ls='eza'
+alias ll='eza -l'
+alias la='eza -la'
 
 alias c='clear'
 

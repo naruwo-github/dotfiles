@@ -3,7 +3,7 @@ echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 
 # Second, install packages via homebrew
 brew install asdf
-brew install exa
+brew install eza
 brew install starship
 brew install zsh-autosuggestions
 
