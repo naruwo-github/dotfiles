@@ -21,3 +21,11 @@ asdf install python $PYTHON_VERSION
 asdf global python $PYTHON_VERSION
 pip install --upgrade pip
 pip install pipenv
+
+# Fourth, install sshrc
+brew install wget
+wget https://raw.githubusercontent.com/cdown/sshrc/master/sshrc
+chmod +x sshrc
+# maybe, forced to use sudo(and password)
+mv sshrc /usr/local/bin/
+cd && touch .sshrc

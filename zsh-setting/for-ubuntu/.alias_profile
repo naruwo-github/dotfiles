@@ -38,3 +38,6 @@ alias dc='docker compose'
 alias dcon='docker container'
 alias dsp='docker system prune'
 alias dvp='docker volume prune'
+
+# sshrc
+alias ssh='sshrc'
