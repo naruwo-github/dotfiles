@@ -1,8 +1,8 @@
-# First, install homebrew
+# install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
-# Second, install packages via homebrew
+# install packages via homebrew
 brew install asdf
 echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 brew install eza
@@ -12,7 +12,7 @@ brew install starship
 brew install zsh-autosuggestions
 
 
-# Third, install language via asdf
+# install language via asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
@@ -27,8 +27,10 @@ asdf global python $PYTHON_VERSION
 pip install --upgrade pip
 pip install pipenv
 
+# install fig or inshellisense
+npm install -g @microsoft/inshellisense # inshellisense
 
-# Fourth, install sshrc
+# install sshrc
 # brew install wget
 # wget https://raw.githubusercontent.com/cdown/sshrc/master/sshrc
 # chmod +x sshrc
