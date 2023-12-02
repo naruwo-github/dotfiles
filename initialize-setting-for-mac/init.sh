@@ -1,10 +1,13 @@
 # First, install homebrew
-echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 
 # Second, install packages via homebrew
 brew install asdf
+echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+
 brew install eza
+
 brew install starship
+
 brew install zsh-autosuggestions
 
 # Third, install language via asdf
