@@ -1,14 +1,16 @@
 # First, install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 
 # Second, install packages via homebrew
 brew install asdf
 echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
-
 brew install eza
-
+brew install lazygit
+brew install lazydocker
 brew install starship
-
 brew install zsh-autosuggestions
+
 
 # Third, install language via asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
@@ -24,6 +26,7 @@ asdf install python $PYTHON_VERSION
 asdf global python $PYTHON_VERSION
 pip install --upgrade pip
 pip install pipenv
+
 
 # Fourth, install sshrc
 # brew install wget

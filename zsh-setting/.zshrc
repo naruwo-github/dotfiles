@@ -1,14 +1,13 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+
+
+
+# activate starship
 eval "$(starship init zsh)"
 
 # シェル関数`compinit`の自動読み込み
 autoload -Uz compinit && compinit
-
-
-##
-# zsh history setting
-##
 
 # 履歴ファイルの保存先
 export HISTFILE=${HOME}/.zsh_history
@@ -24,11 +23,16 @@ setopt EXTENDED_HISTORY
 # alias setting
 source ~/.alias_profile
 
+# activate autosuggestions plugin
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# asdf settings
+# activate asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
+
+##
+# setting: '^E'=peco-cdr
+##
 # cdr command
 if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
     autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
@@ -38,7 +42,6 @@ if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]
     zstyle ':chpwd:*' recent-dirs-max 1000
     zstyle ':chpwd:*' recent-dirs-file "$HOME/.cache/chpwd-recent-dirs"
 fi
-
 # peco for cdr command
 function peco-cdr () {
     local selected_dir="$(cdr -l | sed 's/^[0-9].//' | peco --prompt="cdr >" --query "$LBUFFER")"
@@ -49,6 +52,8 @@ function peco-cdr () {
 }
 zle -N peco-cdr
 bindkey '^E' peco-cdr
+
+
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
