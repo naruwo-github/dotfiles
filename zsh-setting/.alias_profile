@@ -46,4 +46,4 @@ alias lzg='lazygit'
 alias lzd='lazydocker'
 
 # sshrc
-alias ssh='sshrc'
+# alias ssh='sshrc'
