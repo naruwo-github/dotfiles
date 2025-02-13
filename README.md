@@ -1,22 +1,41 @@
 # dotfiles
 
-Create symbolic links: `ln -s <Linked file path> <Path to where to create the symbolic link>`
+## Overview
+This repository contains dotfiles for setting up and configuring a Mac environment.
 
-* `initialize-setting/`: This is for the time when you change your mac. When you open your new mac, you should execute `initialize-setting/init.sh` first!
-
-* `vim-setting/`: This is for the setting improving vim life!
-  * symbolic link example: `ln -s ~/.../vim-setting/.vimrc ~/.vimrc`
-
-* `zsh-setting/`: These are zsh settings installed when login to or open zsh.
-  * about difference between `.zprofile` and `.zshrc`: https://gallard316.hatenablog.com/entry/2020/11/24/185634
-  * symbolic link example
-
-```
-ln -s ~/.../zsh-setting/.zprofile ~/.zprofile
-ln -s ~/.../zsh-setting/.zshrc ~/.zshrc
-ln -s ~/.../zsh-setting/.alias_profile ~/.alias_profile
+## How to Create Symbolic Links
+Basic syntax:
+```bash
+ln -s <Source file path> <Destination path>
 ```
 
-* `starship.toml`: This is one of zsh settings.
-  * Starship official: https://starship.rs/
-  * symbolic link example: `ln -s .starship.toml ~/.config/starship.toml`
+## Directory Structure
+
+### 🔧 initialize-setting/
+Scripts for new Mac setup
+- Usage: When you get a new Mac, run `initialize-setting/init.sh` first
+
+### 📝 vim-setting/
+Vim configuration files
+- Setup example:
+  ```bash
+  ln -s ~/.../vim-setting/.vimrc ~/.vimrc
+  ```
+
+### 🐚 zsh-setting/
+Zsh configuration files (loaded at login and startup)
+- For the difference between `.zprofile` and `.zshrc`, see [here](https://gallard316.hatenablog.com/entry/2020/11/24/185634)
+- Setup example:
+  ```bash
+  ln -s ~/.../zsh-setting/.zprofile ~/.zprofile
+  ln -s ~/.../zsh-setting/.zshrc ~/.zshrc
+  ln -s ~/.../zsh-setting/.alias_profile ~/.alias_profile
+  ```
+
+### ⭐️ starship.toml
+Starship prompt configuration file
+- [Starship Official Website](https://starship.rs/)
+- Setup example:
+  ```bash
+  ln -s .starship.toml ~/.config/starship.toml
+  ```
