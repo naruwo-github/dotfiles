@@ -18,6 +18,8 @@ set ruler
 set showmatch
 set cursorline
 set encoding=UTF-8
+set t_TI=^[[4?h
+set t_TE=^[[4?l
 
 
 ""

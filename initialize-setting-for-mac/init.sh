@@ -9,7 +9,6 @@ brew install eza
 brew install lazygit
 brew install lazydocker
 brew install starship
-brew install zsh-autosuggestions
 
 
 # install language via asdf
