@@ -54,7 +54,7 @@ if [ -f '/Users/narumi.nogawa/Developer/google-cloud-sdk/completion.zsh.inc' ]; 
 
 # activate asdf
 export PATH="$HOME/.asdf/shims:$PATH"
-source $(brew --prefix asdf)/libexec/asdf.sh
+. $HOME/.asdf/asdf.sh
 
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
