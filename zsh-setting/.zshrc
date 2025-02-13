@@ -1,7 +1,6 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-
-
+# Amazon Q pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
+# Q pre block. Keep at the top of this file.
 
 # activate starship
 eval "$(starship init zsh)"
@@ -22,13 +21,6 @@ setopt EXTENDED_HISTORY
 
 # alias setting
 source ~/.alias_profile
-
-# activate autosuggestions plugin
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# activate asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
 
 ##
 # setting: '^E'=peco-cdr
@@ -54,9 +46,15 @@ zle -N peco-cdr
 bindkey '^E' peco-cdr
 
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/narumi.nogawa/Developer/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/narumi.nogawa/Developer/google-cloud-sdk/path.zsh.inc'; fi
 
-# inshellisense activation
-#[ -f ~/.inshellisense/key-bindings.zsh ] && source ~/.inshellisense/key-bindings.zsh
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/narumi.nogawa/Developer/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/narumi.nogawa/Developer/google-cloud-sdk/completion.zsh.inc'; fi
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+# activate asdf
+export PATH="$HOME/.asdf/shims:$PATH"
+source $(brew --prefix asdf)/libexec/asdf.sh
+
+# Amazon Q post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
