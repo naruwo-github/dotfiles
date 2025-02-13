@@ -1,9 +1,9 @@
+alias c='clear'
+
 # eza plugin
 alias ls='eza'
 alias ll='eza -l'
 alias la='eza -la'
-
-alias c='clear'
 
 # ls after cd
 cdls () {
@@ -49,9 +49,6 @@ alias dvp='docker volume prune'
 # lazyxxx
 alias lzg='lazygit'
 alias lzd='lazydocker'
-
-# sshrc
-# alias ssh='sshrc'
 
 # gcloud
 alias glogin='gcloud auth login --update-adc'

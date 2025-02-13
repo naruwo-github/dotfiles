@@ -1,16 +1,33 @@
 # Initialize Setting
 
-These are helpfull when you change your mac.
+## Overview
+This repository contains essential settings and tools for setting up a new Mac.
 
-## All you have to do is executing bellow
+## Setup Instructions
 
-- `. init.sh`
-- Installing packages
-  - Homebrew: https://brew.sh/
-    - asdf: https://asdf-vm.com/
-    - eza: https://github.com/eza-community/eza
-    - starship: https://starship.rs/
-    * peco: https://github.com/peco/peco
-    - sshrc:
-      - https://supporthost.com/sshrc/
-      - https://qiita.com/ikuwow/items/ba4ca57fd67c06fd1b19
+1. Run Basic Configuration
+```bash
+. init.sh
+```
+
+2. Install Required Packages
+Install the following tools in order:
+
+### 📦 Homebrew
+Package manager for macOS
+- Installation: [Homebrew Official Website](https://brew.sh/)
+
+### 🔧 Essential Tools
+Install these tools using Homebrew:
+
+- **asdf**: Version Manager
+  - [Official Documentation](https://asdf-vm.com/)
+
+- **eza**: Modern replacement for ls
+  - [GitHub](https://github.com/eza-community/eza)
+
+- **starship**: Customizable prompt
+  - [Official Website](https://starship.rs/)
+
+- **peco**: Interactive filtering tool
+  - [GitHub](https://github.com/peco/peco)
