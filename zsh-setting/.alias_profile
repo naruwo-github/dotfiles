@@ -52,3 +52,6 @@ alias lzd='lazydocker'
 
 # sshrc
 # alias ssh='sshrc'
+
+# gcloud
+alias glogin='gcloud auth login --update-adc'
