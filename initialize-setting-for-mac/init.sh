@@ -2,8 +2,8 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install packages via homebrew
-# brew install go # for asdf (git close ver)
-brew install asdf
+brew install go # for asdf (git close ver)
+# brew install asdf
 brew install starship
 brew install eza
 brew install lazygit
