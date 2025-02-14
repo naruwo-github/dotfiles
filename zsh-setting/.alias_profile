@@ -3,7 +3,7 @@ alias c='clear'
 # eza plugin
 alias ls='eza'
 alias ll='eza -l'
-alias la='eza -la'
+alias lla='eza -la'
 
 # ls after cd
 cdls () {
@@ -30,14 +30,15 @@ alias gb='git branch'
 alias gco='git checkout'
 alias gcl='git clone'
 alias gc='git commit'
-alias gc-m='git commit'
+alias gcm='git commit -m'
 alias gd='git diff'
 alias gf='git fetch'
 alias gl='git log'
 alias gs='git status'
 alias gsta='git stash'
 alias gp='git push'
-alias gpl='git pull origin'
+alias gpl='git pull'
+alias gps='git push'
 alias gm='git merge'
 
 # docker
