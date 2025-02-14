@@ -1,6 +1,9 @@
+##########
 # Amazon Q pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
-# Q pre block. Keep at the top of this file.
+##########
+
+
 
 # activate starship
 eval "$(starship init zsh)"
@@ -58,5 +61,9 @@ if [ -f '/Users/narumi.nogawa/Developer/google-cloud-sdk/completion.zsh.inc' ]; 
 export PATH="$HOME/.asdf/shims:$PATH"
 . $HOME/.asdf/asdf.sh
 
+
+
+##########
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+##########
