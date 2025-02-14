@@ -55,11 +55,8 @@ if [ -f '/Users/narumi.nogawa/Developer/google-cloud-sdk/path.zsh.inc' ]; then .
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/narumi.nogawa/Developer/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/narumi.nogawa/Developer/google-cloud-sdk/completion.zsh.inc'; fi
 
-# activate asdf (brew ver)
-# wip
-# activate asdf (git close ver)
-export PATH="$HOME/.asdf/shims:$PATH"
-. $HOME/.asdf/asdf.sh
+# activate mise
+eval "$(~/.local/bin/mise activate zsh)"
 
 
 
