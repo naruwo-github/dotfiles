@@ -52,9 +52,11 @@ if [ -f '/Users/narumi.nogawa/Developer/google-cloud-sdk/path.zsh.inc' ]; then .
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/narumi.nogawa/Developer/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/narumi.nogawa/Developer/google-cloud-sdk/completion.zsh.inc'; fi
 
-# activate asdf
-export PATH="$HOME/.asdf/shims:$PATH"
-. $HOME/.asdf/asdf.sh
+# activate asdf (brew ver)
+# wip
+# activate asdf (git close ver)
+# export PATH="$HOME/.asdf/shims:$PATH"
+# . $HOME/.asdf/asdf.sh
 
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
