@@ -49,14 +49,14 @@ zle -N peco-cdr
 bindkey '^E' peco-cdr
 
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/narumi.nogawa/Developer/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/narumi.nogawa/Developer/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/narumi.nogawa/Developer/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/narumi.nogawa/Developer/google-cloud-sdk/completion.zsh.inc'; fi
-
 # activate mise
 eval "$(~/.local/bin/mise activate zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/nogawa.narumi/Developer/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/nogawa.narumi/Developer/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/nogawa.narumi/Developer/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/nogawa.narumi/Developer/google-cloud-sdk/completion.zsh.inc'; fi
 
 
 
