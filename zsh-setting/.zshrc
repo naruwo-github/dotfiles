@@ -9,7 +9,8 @@
 eval "$(starship init zsh)"
 
 # シェル関数`compinit`の自動読み込み
-autoload -Uz compinit && compinit
+# NOTE: 起動を速くするなら `compinit -C` でキャッシュ活用を検討
+autoload -Uz compinit && compinit -C
 
 # 履歴ファイルの保存先
 export HISTFILE=${HOME}/.zsh_history
@@ -21,6 +22,8 @@ export SAVEHIST=100000
 setopt hist_ignore_dups
 # 開始と終了を記録
 setopt EXTENDED_HISTORY
+# NOTE: 検索体験向上のため `share_history`, `hist_ignore_space`, `hist_reduce_blanks` 等も候補。
+# NOTE: `HISTSIZE` が `SAVEHIST` より小さい設計の意図を要確認。
 
 # alias setting
 source ~/.alias_profile
@@ -28,6 +31,7 @@ source ~/.alias_profile
 ##
 # setting: '^E'=peco-cdr
 ##
+# NOTE: `peco + cdr` は `zoxide` + `fzf` への置換で軽量・高速化の余地あり
 # cdr command
 if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
     autoload -Uz chpwd_recent_dirs cdr add-zsh-hook

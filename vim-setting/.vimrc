@@ -18,6 +18,7 @@ set ruler
 set showmatch
 set cursorline
 set encoding=UTF-8
+" NOTE: 端末制御コードは環境依存で表示乱れの原因になり得るため必要時のみ
 set t_TI=^[[4?h
 set t_TE=^[[4?l
 
@@ -38,6 +39,7 @@ Plug 'dense-analysis/ale'     " https://github.com/dense-analysis/ale
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'       " https://github.com/junegunn/fzf.vim
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " https://github.com/neoclide/coc.nvim
+" NOTE: `ale` と `coc.nvim` の併用は重くなりがち。LSPはどちらかに寄せる選択肢あり
 Plug 'morhetz/gruvbox'        " https://vimawesome.com/plugin/gruvbox
 call plug#end()
 

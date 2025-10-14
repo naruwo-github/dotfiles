@@ -4,7 +4,8 @@
 echo "Starting dotfiles setup..."
 
 # Error handling
-set -e
+# NOTE: 失敗の早期検知と未定義変数の防止に `set -euo pipefail` を検討
+set -euo pipefail
 
 # Install required packages
 echo "Installing required packages..."
@@ -21,9 +22,11 @@ brew install starship
 brew install eza
 brew install lazygit
 brew install lazydocker
+# NOTE: ディレクトリ移動は `zoxide` + `fzf` の組み合わせも候補
 brew install peco
 
 # Install mise
+# NOTE: パイプインストールはハッシュ固定や検証のない取得となる点に留意
 echo "Installing mise..."
 curl https://mise.run | sh
 
